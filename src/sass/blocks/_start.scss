@@ -1,0 +1,206 @@
+.start {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 125px;
+    }
+
+    &__text {
+        margin-top: 24px;
+        color: $text-black;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .timer {
+        margin-top: 40px;
+        &__text {
+            color: $accent-black;
+            span {
+                color: $main-blue;
+            }
+        }
+        &__info {
+            display: flex;
+            gap: 16px;
+        }
+        &__time {
+            padding: 20px 0;
+            width: 100px;
+            border-radius: 13px;
+            background-color: $light-blue;
+            z-index: 2;
+            text-align: center;
+    
+            &_number {
+                color: $main-blue;
+                font-size: 56px;
+                line-height: 48px;
+                font-weight: bold;
+            }
+            &_type {
+                margin-top: 12px;
+                color: $text-black;
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__form {
+        width: 445px;
+        flex-shrink: 0;
+        background-color: $white;
+        border-radius: 13px;    
+        padding: 40px 42px 40px 42px;  
+        box-shadow: 0px 20px 20px 0px rgba($color: $main-blue, $alpha: 0.1);  
+    }
+
+    &__input {
+        position: relative;
+        width: 100%;
+        height: 68px;
+
+        input {
+            font-size: 16px;
+            line-height: 28px;
+            padding: 16px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $text-black;
+            color: $accent-black;
+        }
+
+        .fa-exclamation-circle {
+            position: absolute;
+            z-index: 1;
+            top: 25px;
+            right: 25px;
+            width: 20px;
+            height: 20px;
+            background: url("/icons/sign-up/icon-cross.svg");
+            visibility: hidden;
+        }
+    }
+
+    &__dropdown {
+        width: 100%;
+        position: relative;
+        height: 68px;
+        border-bottom: 1px solid $text-black;
+
+    }
+    .select {
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 16px;
+        height: 100%;
+        transition: background 300ms;
+
+        &-clicked {
+            
+        }
+        
+    }
+    .selected {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: bold;
+        color: $accent-black;
+        span {
+            color: $text-black;
+            margin-left: 8px;
+        }
+    }
+    .caret {
+        transition: 300ms;
+
+        &-rotate {
+            transform: rotate(180deg);
+        }
+    }
+
+    .menu {
+        z-index: 1;
+        list-style: none;
+        padding: 0px 30px;
+        background: $white;
+        border: 1px solid $text-black;
+        border-radius: 8px;
+        position: absolute;
+        top: 76px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 367px;
+        opacity: 0;
+        display: none;
+        transition: 200ms;
+
+        li {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: bold;
+            color: $accent-black;
+            cursor: pointer;
+            width: 100%;
+            height: 68px;
+            border-bottom: 1px solid $text-black;
+            padding: 20px 16px;
+            &:last-child {
+                border: none;
+            }
+
+            span {
+                color: $text-black;
+                margin-left: 8px;
+            }
+        }
+        &-open {
+            display: block;
+            opacity: 1;
+        }
+    }
+    .active {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 9;
+            top: 30px;
+            right: 8px;
+            width: 14px;
+            height: 12px;
+            background: url('../icons/sign-up/icon-check.svg');
+            background-repeat: no-repeat;
+        }
+
+    }
+
+
+    &__btn {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    
+
+    .success input {
+        border-bottom: 1px solid $text-black;
+            color: $accent-black;
+    }
+    .error input {
+        border-bottom: 1px solid $light-red;
+        color: $light-red;
+    }
+    &__input.error span.fa-exclamation-circle {
+        visibility: visible;
+    }
+}

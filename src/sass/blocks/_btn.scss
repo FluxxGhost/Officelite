@@ -1,0 +1,35 @@
+.button {
+    display: block;
+    background-color: $main-blue;
+    border-radius: 28px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: $white;
+    width: 171px;
+    height: 56px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: $hover-blue;
+    }
+
+    &_gray {
+        background-color: $light-blue;
+        color: $main-blue;
+        &:hover {
+            background-color: $hover-light-blue;
+        }
+    }
+    &_white {
+        background-color: $white;
+        color: $main-blue;
+        &:hover {
+            background-color: $white;
+            color: $hover-blue;
+        }
+    }
+}

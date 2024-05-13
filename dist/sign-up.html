@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Officelite coming soon site</title>
+    <meta name="officelite" content="officelite">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container">
+        <div class="header__block">
+            <img class="header__img" src="icons/shared/logo.svg" alt="logo">
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="start">
+      <div class="container">
+        <div class="start__block">
+          <div class="start__info">
+            <h1 class="start__title title title_fs56">Work smarter. Save time.</h1>
+            <p class="start__text">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+                  
+            <div class="timer">        
+              <h3 class="title title_fs16 timer__text">Coming <span id="launch-date">28 July 2024</span></h3>
+                
+              <div class="timer__info">
+                <div class="timer__time timer__time_days">
+                  <span id="days" class="timer__time_number"></span>
+                  <p class="timer__time_type">days</p>
+                </div>
+                <div class="timer__time timer__time_hours">
+                  <span id="hours" class="timer__time_number"></span>
+                  <p class="timer__time_type">hours</p>
+                </div>
+                <div class="timer__time timer__time_min">
+                  <span id="min" class="timer__time_number"></span>
+                  <p class="timer__time_type">min</p>
+                </div>
+                <div class="timer__time timer__time_sec">
+                  <span id="sec" class="timer__time_number"></span>
+                  <p class="timer__time_type">sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="start__form" id="form" action="#">
+            
+            <div class="start__input">
+              <input id="username" placeholder="Name" type="text" name="name">
+              <span class="fas fa-exclamation-circle"></span>
+              
+            </div>
+            <div class="start__input">
+              <input id="useremail" placeholder="Email Address" type="email" name="email">
+              <span class="fas fa-exclamation-circle"></span>
+              
+            </div>
+
+            <div class="start__dropdown">
+              <div class="select">
+                <p class="selected">Basic Pack <span>Free</span></p>
+                <div class="caret"><img src="icons/sign-up/icon-arrow-down.svg" alt="caret"></div>
+              </div>
+              <ul class="menu">
+                <li class="active">Basic Pack <span>Free</span></li>
+                <li>Pro Pack <span>$9.99</span></li>
+                <li>Ultimate Pack <span>$19.99</span></li>
+              </ul>
+            </div>
+            
+            <div class="start__input">
+              <input id="userphone" placeholder="Phone Number" name="phone" type="tel">
+              <span class="fas fa-exclamation-circle"></span>
+              
+            </div>
+            <div class="start__input">
+              <input placeholder="Company" name="company" type="text">
+            </div>
+
+            <button class="button start__btn">Get on the list</button>
+
+          </form>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="right-bg"></div>
+
+
+
+  
+  <script src="js/script.js"></script>
+
+</body>
+</html>

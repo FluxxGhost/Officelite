@@ -1,0 +1,19 @@
+.title {
+    font-weight: 700;
+    color: $accent-black;
+
+    &_fs16 { //h3
+        font-size: 16px;
+        line-height: 48px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    &_fs20 { //h2
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &_fs56 { //h1
+        font-size: 56px;
+        line-height: 64px;
+    }
+}

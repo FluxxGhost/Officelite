@@ -1,0 +1,56 @@
+.footer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 82px;
+    padding-bottom: 91px;
+    z-index: 4;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .timer {
+
+        &__text {
+            color: $white;
+            span {
+                color: $main-blue;
+            }
+        }
+        &__info {
+            display: flex;
+            gap: 16px;
+        }
+        &__time {
+            padding: 20px 0;
+            width: 100px;
+            border-radius: 13px;
+            background-color: $accent-black;
+            z-index: 2;
+            text-align: center;
+    
+            &_number {
+                color: $white;
+                font-size: 56px;
+                line-height: 48px;
+                font-weight: bold;
+            }
+            &_type {
+                margin-top: 12px;
+                color: $text-black;
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    &__button {
+        margin-top: 12px;
+    }
+}
+
